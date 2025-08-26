@@ -54,9 +54,12 @@ function App() {
     setPickedWord(word);
     setLetters(wordLetters);
    
-    setGameStage(stages[1].name); // stages -> o array de objetos, 1 -> posição, name -> o dado dentro do objeto do array que está sendo alterado
+     // stages -> o array de objetos, 1 -> posição, name -> o dado dentro do objeto do array que está sendo alterado
   }, [pickWordAndCategory])
 
+  const toChangeToMidGame = () => {
+    setGameStage(stages[1].name);
+  }
   const verifyLetter = (letter) => { // Checks if the word contains the mentioned letters
     // setGameStage(stages[2].name);
 
@@ -116,7 +119,7 @@ function App() {
 
   return (
     <div className="App">
-      {gameStage === 'start' && <StartScreen startGame={startGame} />}
+      {gameStage === 'start' && <StartScreen startGame={startGame} toChangeToMidGame={toChangeToMidGame} />}
       {gameStage === 'mid' &&
         <MidScreen
           verifyLetter={verifyLetter}
