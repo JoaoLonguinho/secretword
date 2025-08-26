@@ -1,0 +1,39 @@
+.start{
+    max-width: 50%;
+}
+.start h1{
+    font-size: 3.5em;
+    color: #04A777;
+}
+.start p{
+    margin-bottom: 2em;
+}
+.highlight{
+    color: #f75C03;
+}
+button{
+    background: #04A777;
+    padding: 10px 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 2em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: #f75C03;
+    transition: 0.2s ease-in-out;
+}
+.game-desc{
+    background-color: rgb(14, 14, 14);
+    font-size: 14px;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+}
